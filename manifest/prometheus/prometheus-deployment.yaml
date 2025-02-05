@@ -13,7 +13,7 @@ spec:
       labels:
         app: prometheus
       annotations:
-        configmap.reloadedAt: "{{ now }}"
+        checksum/config-file: "{{ .Values.configFileChecksum }}"
     spec:
       containers:
         - name: prometheus
