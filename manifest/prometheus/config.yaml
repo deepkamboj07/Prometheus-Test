@@ -21,3 +21,7 @@ data:
         static_configs:
           - targets: ['3.111.23.70:9100']
 
+      - job_name: 'devtown-ec2-Cluster_Node1'
+        static_configs:
+          - targets: ['3.93.46.247:9100']
+
