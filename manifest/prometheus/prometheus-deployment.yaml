@@ -12,6 +12,8 @@ spec:
     metadata:
       labels:
         app: prometheus
+      annotations:
+        configmap.reloadedAt: "{{ now }}"
     spec:
       containers:
         - name: prometheus
