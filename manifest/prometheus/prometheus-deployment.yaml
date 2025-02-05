@@ -13,7 +13,7 @@ spec:
       labels:
         app: prometheus
       annotations:
-        checksum/config-file: "{{ .Values.configFileChecksum }}"
+        checksum/prometheus-config: "3cdc3e47b56d6e59f75f7cd51d3b42f59879ccabb321a6a80fbacb7b076c7f1f"  
     spec:
       containers:
         - name: prometheus
