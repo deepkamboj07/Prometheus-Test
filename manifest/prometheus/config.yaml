@@ -25,3 +25,7 @@ data:
         static_configs:
           - targets: ['3.93.46.247:9100']
 
+      - job_name: 'DevTown-ec2-Sales'
+        static_configs:
+          - targets: ['13.233.225.162:9100']
+
