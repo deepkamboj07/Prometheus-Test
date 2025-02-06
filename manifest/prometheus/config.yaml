@@ -29,3 +29,7 @@ data:
         static_configs:
           - targets: ['13.233.225.162:9100']
 
+      - job_name: 'DevTown-ec2-CertificatePortal'
+        static_configs:
+          - targets: ['3.7.158.33:9100']
+
