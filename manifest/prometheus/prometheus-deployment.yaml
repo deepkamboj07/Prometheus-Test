@@ -22,15 +22,17 @@ spec:
             - containerPort: 9090
           args:
             - "--config.file=/etc/prometheus/prometheus.yml"
+            - "--storage.tsdb.path=/prometheus" 
           volumeMounts:
             - name: config-volume
               mountPath: /etc/prometheus
-            - name: prometheus-data
-              mountPath: /prometheus  
+            - name: prometheus-storage
+              mountPath: /prometheus
       volumes:
         - name: config-volume
           configMap:
             name: prometheus-config
-        - name: prometheus-data
+        - name: prometheus-storage
           persistentVolumeClaim:
-            claimName: prometheus-data  
+            claimName: prometheus-pvc
+
