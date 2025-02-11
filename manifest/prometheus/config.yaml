@@ -33,3 +33,7 @@ data:
         static_configs:
           - targets: ['3.7.158.33:9100']
 
+      - job_name: 'DevTown-CloudWatch'
+        static_configs:
+          - targets: ['3.93.46.247:32106']
+
