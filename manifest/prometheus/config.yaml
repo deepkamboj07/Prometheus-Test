@@ -38,17 +38,17 @@ data:
           - targets: ['3.93.46.247:32106']
 
       - job_name: 'DevTown-LMS-Auth-Service'
-        metrics_path: '/auth/metrics' 
+        metrics_path: '/metrics' 
         static_configs:
-          - targets: ['5f1iot5725.execute-api.ap-south-1.amazonaws.com']
+          - targets: ['13.126.69.74:8080']
 
       - job_name: 'DevTown-LMS-Student-Service'
-        metrics_path: '/student/metrics' 
+        metrics_path: '/metrics' 
         static_configs:
-          - targets: ['5f1iot5725.execute-api.ap-south-1.amazonaws.com']    
+          - targets: ['13.126.69.74:8083']    
 
       - job_name: 'DevTown-LMS-Admin-Service'
-        metrics_path: '/admin/metrics' 
+        metrics_path: '/metrics' 
         static_configs:
-          - targets: ['5f1iot5725.execute-api.ap-south-1.amazonaws.com']
+          - targets: ['13.126.69.74:3000']
 
