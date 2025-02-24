@@ -37,3 +37,18 @@ data:
         static_configs:
           - targets: ['3.93.46.247:32106']
 
+      - job_name: 'DevTown-LMS-Auth-Service'
+        metrics_path: '/auth/metrics' 
+        static_configs:
+          - targets: ['5f1iot5725.execute-api.ap-south-1.amazonaws.com']
+
+      - job_name: 'DevTown-LMS-Student-Service'
+        metrics_path: '/student/metrics' 
+        static_configs:
+          - targets: ['5f1iot5725.execute-api.ap-south-1.amazonaws.com']    
+
+      - job_name: 'DevTown-LMS-Admin-Service'
+        metrics_path: '/admin/metrics' 
+        static_configs:
+          - targets: ['5f1iot5725.execute-api.ap-south-1.amazonaws.com']
+
