@@ -52,3 +52,7 @@ data:
         static_configs:
           - targets: ['13.126.69.74:3000']
 
+      - job_name: 'TORUS-ec2-GSC'
+        static_configs:
+          - targets: ['13.203.38.108:9100']
+
