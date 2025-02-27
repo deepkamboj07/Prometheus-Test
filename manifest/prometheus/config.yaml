@@ -12,38 +12,38 @@ data:
       - job_name: 'Prometheus'
         static_configs:
           - targets: ['localhost:9090']
-        labels:
-          group: 'DevTown-EC2'
+            labels:
+              group: 'DevTown-EC2'
 
       - job_name: 'DevTown-ec2-LMS'
         static_configs:
           - targets: ['13.126.69.74:9100']
-        labels:
-          group: 'DevTown-EC2'
+            labels:
+              group: 'DevTown-EC2'
 
       - job_name: 'DevTown-ec2-KOSH'
         static_configs:
           - targets: ['3.111.23.70:9100']
-        labels:
-          group: 'DevTown-EC2'
+            labels:
+              group: 'DevTown-EC2'
 
       - job_name: 'DevTown-ec2-Cluster-Node1'
         static_configs:
           - targets: ['3.93.46.247:9100']
-        labels:
-          group: 'DevTown-EC2'
+            labels:
+              group: 'DevTown-EC2'
 
       - job_name: 'DevTown-ec2-Sales'
         static_configs:
           - targets: ['13.233.225.162:9100']
-        labels:
-          group: 'DevTown-EC2'
+            labels:
+              group: 'DevTown-EC2'
 
       - job_name: 'DevTown-ec2-CertificatePortal'
         static_configs:
           - targets: ['3.7.158.33:9100']
-        labels:
-          group: 'DevTown-EC2'
+            labels:
+              group: 'DevTown-EC2'
 
       - job_name: 'DevTown-CloudWatch'
         static_configs:
@@ -67,6 +67,6 @@ data:
       - job_name: 'TORUS-ec2-GSC'
         static_configs:
           - targets: ['13.203.38.108:9100']
-        labels:
-          group: 'Torus-EC2'          
+            labels:
+              group: 'Torus-EC2'          
 
